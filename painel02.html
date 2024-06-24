@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(18, 2, 238);
+    }
+    #segunda-linha {
+      background-color: beige;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    #informação-data {
+      color: white;
+      font-size: 35px;
+      border-left: white 1px solid;
+      text-align: center;
+    }
+    #informação-data .row {
+      justify-content: center;
+    }
+    #col-cidade {
+      color: white;
+      font-size: 45px;
+    }
+    #col-cidade .cidade {
+      font-size: 15px !important;
+    }
+    .linha-informações {
+      padding: 5px;
+    }
+    .btn-balcão {
+      background-color: green;
+    }
+    .btn-tipo-atendimento {
+      background-color: white;
+      width: 200px;
+    }
+    .btn-senha {
+      background-color: violet;  
+    }
+    .btn-group {
+      height: 60px;
+      margin: 5px;
+      display: flex;
+      align-items: stretch;
+    }
+    .btn-group i {
+      width: auto;
+    }
+    .btn-group2 {
+      height: 30px; 
+      color: white;
+    }
+    .btn-group2 .btn{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8">
+      <div class="row">
+        <video controls>
+          <source src="1058427217-preview.mp4" type="video/mp4">
+          <p>Your browser doesn't support HTML video. Here is a <a href="1058427217-preview.mp4">link to the video</a> instead.</p>
+        </video>
+      </div>
+      <div class="row linha-informações">
+        <div class="col" id="col-cidade">
+          <div class="row cidade">Brasília</div>
+          <div class="row">28° <i class="fas fa-sun"></i></div>
+        </div>
+        <div class="col"></div>
+        <div class="col" id="informação-data">
+          <div class="row">28/03/2024</div>
+          <div class="row">17:45:45</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <img src="24235846-senha-icone-protecao-ilustracao-placa-seguranca-simbolo-ou-logotipo-vetor.jpg" width="200px" />
+
+      <div class="btn-group btn-group2" role="group" aria-label="Basic example">
+        <button type="button" class="btn ">Senha</button>
+        <button type="button" class="btn "> Atendimento </button>
+        <button type="button" class="btn ">Balcão</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary btn-senha">A 023</button>
+        <button type="button" class="btn btn-tipo-atendimento"><div class="row"> Atendimento ao município </div>
+          <div class="row">Normal</div>
+        </button>
+        <button type="button" class="btn btn-primary btn-balcão">1</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary btn-senha">A 023</button>
+        <button type="button" class="btn btn-tipo-atendimento"><div class="row"> Atendimento ao município </div>
+          <div class="row">Normal</div>
+        </button>
+        <button type="button" class="btn btn-primary btn-balcão">1</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary btn-senha">A 023</button>
+        <button type="button" class="btn btn-tipo-atendimento">
+          <div>Atendimento ao município</div>
+          <div>Prioritário <i class="bi bi-postcard-heart"></i></div>
+        </button>
+        <button type="button" class="btn btn-primary btn-balcão">2</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary btn-senha">A 023</button>
+        <button type="button" class="btn btn-tipo-atendimento">
+          <div>Atendimento ao município</div>
+          <div>Prioritário <i class="bi bi-postcard-heart"></i></div>
+        </button>
+        <button type="button" class="btn btn-primary btn-balcão">2</button>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="segunda-linha">
+    <marquee>Últimas Senhas</marquee>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
